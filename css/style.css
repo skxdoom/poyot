@@ -1,0 +1,228 @@
+/*----------------
+# General
+----------------*/
+body{
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: 300;
+letter-spacing: 0.02em;
+color: #cccccc;
+padding: 0;
+margin: 0;
+/*
+background-image: url("../images/test1.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;*/
+background-color: rgb(19, 76, 144);
+background: rgb(18,11,130);
+background: linear-gradient(0deg, rgb(25, 0, 72) 0%, rgb(6, 34, 70) 33%, rgb(19, 76, 144) 66%, rgb(81, 218, 253) 100%);
+}
+a,
+a:visited,
+a:active{
+color: #bbbbbb;
+text-decoration: none;
+-webkit-transition: color 0.1s;
+-moz-transition: color 0.1s;
+-o-transition: color 0.1s;
+transition: color 0.1s;
+}
+a:hover{
+color: #ffffff;
+}
+.container {
+}
+.bottom-button {
+display: block;
+position: fixed;
+bottom: 0;
+width: 50px;
+margin: 30px;
+border-radius: 5px;
+background: rgba(0, 0, 0, 0.6);
+z-index: 99;
+}
+.left {
+left: 0;
+}
+.right {
+right: 0;
+}
+#mute{
+visibility: visible;
+}
+#unmute {
+visibility: hidden;
+}
+.background {
+position: fixed;
+display: block;
+bottom: 0;
+width: 250px;
+height: auto;
+opacity: 0.7;
+z-index: -99;
+}
+/*----------------
+# Typography
+----------------*/
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+/*----------------
+# Header
+----------------*/
+header {
+display: block;
+margin: 0 auto;
+padding: 5px 20px;
+text-transform: uppercase;
+background-color: rgba(0, 0, 0, 0.6);
+}
+.title {
+padding: 25px 0 15px 0;
+font-size: 36px;
+font-weight: 400;
+letter-spacing: 0.25em;
+}
+.title a {
+text-decoration: none;
+color: white;
+}
+.subtitle {
+text-transform: none;
+}
+/*----------------
+# Navigation
+----------------*/
+ul {
+   -webkit-padding-start: 0;
+}
+/*----------------
+# Content
+----------------*/
+content {
+margin: 0 20px;
+}
+.players-row{
+margin: 0px 0;
+}
+.widgets {
+margin: 0 auto;
+}
+.sound-button {
+display: block;
+margin: 50px auto;
+width: 150px;
+height: 150px;
+text-align: center;
+cursor: pointer;
+opacity: 0.5;
+-webkit-transition: opacity 0.25s;
+-moz-transition: opacity 0.25s;
+-o-transition: opacity 0.25s;
+transition: opacity 0.25s;
+}
+.jquery-knob {
+display: inline;
+width: 150px;
+height: 150px;
+}
+.jp-player {
+position: relative;
+width: 50%;
+height: 50%;
+top: -75%;
+margin: 0 auto;
+}
+img{
+max-width: 100%;
+}
+.jp-play-img {
+}
+.jp-pause-img {
+}
+.jp-play .jp-pause {
+width: 50px;
+}
+.share{
+display: inline-block;
+margin: 10px;
+vertical-align: top;
+}
+/*----------------
+# Footer
+----------------*/
+footer {
+display: block;
+margin: 0 auto;
+padding: 40px 0 20px 0;
+font-size: smaller;
+background-color: rgba(0, 0, 0, 0.2);
+}
+.copyright {
+}
+/*----------------
+# Modal
+----------------*/
+#modal-info-open {
+cursor: pointer;
+}
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal a{
+color: #AAAAAA;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: white;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+color: #555555;
+width: 70%; /* Could be more or less, depending on screen size */
+max-width: 720px;
+animation-name: animatetop;
+animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+margin-bottom: 20px;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: white;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -100px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+/*----------------
+# Adaptive
+----------------*/
+@media (max-width: 959px) {
+
+
+}

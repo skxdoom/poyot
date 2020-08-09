@@ -1,0 +1,22 @@
+AddDefaultCharset UTF-8
+
+DirectoryIndex index index.html
+DirectorySlash On
+Options -Indexes -MultiViews
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+# Redirect from www
+RewriteCond %{HTTP_HOST} ^www.poyot.ru$ [NC]
+RewriteRule ^(.*)$ http://poyot.ru$1 [R=301,L]
+
+# Display no index.html
+RewriteRule ^index.html$ / [QSA,R]
+
+# 404
+ErrorDocument 404 /index.html
+
+# Redirects
+# (Example) Redirect 301 /index.html /about
